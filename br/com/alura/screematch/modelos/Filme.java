@@ -1,32 +1,63 @@
-package screenmatch;
+package Screenmatch.br.com.alura.screematch.modelos;
 
 public class Filme {
-    String nome;
-    int anoDeLancamento;
-    boolean incluidoNoPlano;
+    private String nome;
+    private int anoDeLancamento;
+    private boolean incluidoNoPlano;
     private double somaDasAvaliacoes;
     private int totalDeAvaliacoes;
-    int duracaoEmMinutos;
+    private int duracaoEmMinutos;
 
-    int getTotalDeAvaliacoes(){
-        return totalDeAvaliacoes;
-    }
+    public void exibeFichaTecnica() {
+        System.out.println("Nome do  filme: "+ this.nome);
+        System.out.println("Ano de lançamento: "+ this.anoDeLancamento);
+        System.out.println("Duração em minutos: "+ this.duracaoEmMinutos);
+        System.out.println("Incluído no plano: "+ this.incluidoNoPlano);
+    }    
 
-    int getSomaDasAvaliacoes(){
-        return somaDasAvaliacoes;
-    }
-
-    void exibeFichaTecnica(){
-        System.out.println("Nome do filme: "+ nome);
-        System.out.println("Ano de lançamento: " + anoDeLancamento);
-    }
-
-    void avalia(double nota){
+    public void avalia(double nota){
         somaDasAvaliacoes += nota;
         totalDeAvaliacoes++;
     }
 
-    double pegaMedia(){
-        return somaDasAvaliacoes / totalDeAvaliacoes;
+    public double pegaMedia(){
+        return somaDasAvaliacoes/totalDeAvaliacoes;
     }
+
+    public String getNome(){
+        return this.nome;
+    }
+
+    public void setNome(String nome){
+        this.nome = nome;
+    }
+
+    public int getAnoDeLancamento(){
+        return this.anoDeLancamento;
+    }
+
+    public void setAnoDeLancamento(int anoDeLancamento){
+        this.anoDeLancamento = anoDeLancamento;
+    }
+
+    public boolean getIncluidoNoPlano(){
+        return this.incluidoNoPlano;
+    }
+
+    public void setIncluidoNoPlano(boolean incluidoNoPlano){
+        this.incluidoNoPlano = incluidoNoPlano;
+    }
+
+    public int getDuracaoEmMinutos(){
+        return this.duracaoEmMinutos;
+    }
+
+    public void setDuracaoEmMinutos(int duracaoEmMinutos){
+        this.duracaoEmMinutos = duracaoEmMinutos;
+    }
+
+    public int getTotalDeAvaliacoes(){
+        return this.totalDeAvaliacoes;
+    }
+
 }
