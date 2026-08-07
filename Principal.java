@@ -1,6 +1,7 @@
 package Screenmatch;
 
 import Screenmatch.br.com.alura.screematch.modelos.Filme;
+import Screenmatch.br.com.alura.screematch.modelos.Serie;
 
 public class Principal {
     public static void main(String[] args) {
@@ -23,6 +24,14 @@ public class Principal {
         
         // System.out.println(meuFilme.getNome());
         // System.out.println(meuFilme.getIncluidoNoPlano());
+
+        Serie lost = new Serie();
+
+        lost.setNome("Lost");
+        lost.setAnoDeLancamento(2000);
+        lost.exibeFichaTecnica();
+        lost.setTemporadas(10);
+        System.out.println(lost.getTemporadas());
     }
 }
 
