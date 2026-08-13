@@ -3,7 +3,6 @@ package Screenmatch;
 import Screenmatch.br.com.alura.screematch.modelos.Filme;
 
 import Screenmatch.br.com.alura.screematch.modelos.Serie;
-import exerciciopoo.Calculadora;
 import Screenmatch.br.com.alura.screematch.calculos.CalculadoraDeTempo;
 
 public class Principal {
@@ -37,10 +36,7 @@ public class Principal {
         CalculadoraDeTempo calculadora = new CalculadoraDeTempo();
 
         calculadora.inclui(meuFilme);
-
-        calculadora.inclui(outroFilme);
-
-        System.out.println(calculadora.getTempoTotal());  
+        calculadora.inclui(outroFilme); 
         calculadora.inclui(lost);
         System.out.println(calculadora.getTempoTotal());     
 
