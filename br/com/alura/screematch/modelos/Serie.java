@@ -1,6 +1,6 @@
 package Screenmatch.br.com.alura.screematch.modelos;
 
-public class Serie extends Titulo {
+public class Serie extends Titulo{
     private int temporadas;
     private boolean ativa;
     private int episodiosPorTemporada;
